@@ -38,6 +38,16 @@ class TableTest(TestCase):
         self.assertEqual(t.name, 'foo')
 
 
+    def test_init_columns(self):
+        """
+        You can initialize with a list of columns
+        """
+        c1 = Column()
+        c2 = Column()
+        t = Table('foo', [c1, c2])
+        self.assertEqual(t.columns, [c1, c2])
+
+
 
 class SchemaTest(TestCase):
 

@@ -1,4 +1,6 @@
-
+"""
+In-memory database representation.
+"""
 
 
 
@@ -15,9 +17,9 @@ class Table:
     name = None
     
     
-    def __init__(self, name=None):
+    def __init__(self, name=None, columns=None):
         self.name = name
-        self.columns = []
+        self.columns = columns or []
 
 
 
