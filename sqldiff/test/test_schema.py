@@ -30,6 +30,14 @@ class TableTest(TestCase):
         self.assertEqual(t.columns, [])
 
 
+    def test_init_name(self):
+        """
+        You can initialize with a name
+        """
+        t = Table('foo')
+        self.assertEqual(t.name, 'foo')
+
+
 
 class SchemaTest(TestCase):
 
