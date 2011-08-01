@@ -15,7 +15,8 @@ class Table:
     name = None
     
     
-    def __init__(self):
+    def __init__(self, name=None):
+        self.name = name
         self.columns = []
 
 
